@@ -559,15 +559,15 @@ text-align: center;
   height: 20px;
   width: 10vw;
   background: transparent;
-  color: #555555;
+  color: #eeeeee;
   border: none;
-  font: normal bold 16px 'Calligraffitti',Trebuchet,sans-serif;
+  font: normal bold 18px 'Oxygen',Trebuchet,sans-serif;
 }
 #searchBox:focus {
   background: transparent;
-  color: #AAAAAA;
+  color: #ffffff;
   outline: none;
-  font: normal normal 16px 'Calligraffitti',Trebuchet,sans-serif;
+  font: normal normal 16px 'Oxygen',Trebuchet,sans-serif;
 }
 #searchButton {
   background: #000000;
@@ -734,7 +734,7 @@ height:auto;
 ]]></b:skin>
 
 <b:template-skin>
-      <b:variable default='960px' name='content.width' type='string' value='100vw'/>
+      <b:variable default='960px' name='content.width' type='string' value='95vw'/>
       <b:variable default='0' name='main.column.left.width' type='string' value='0'/>
       <b:variable default='310px' name='main.column.right.width' type='string' value='20vw'/>
 
@@ -892,6 +892,19 @@ if (window.addEventListener) {
 } else {
     window.attachEvent('onload', hideLightbox);
 }
+
+$(document).ready(function() {
+    var is_pc = true;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|NOKIA|WPDesktop/i.test(navigator.userAgent)) {
+        is_pc = false;
+    }
+    if (is_pc == true) {
+        $(function(){
+            $(".mbs-movie").mb_YTPlayer();
+        });
+    }
+ });
+
 //]]>
 </script>
 <style>
@@ -957,19 +970,6 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("h1.title a").lettering('words').children('span').lettering();
 });
-
-$(document).ready(function() {
-    var is_pc = true;
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|NOKIA|WPDesktop/i.test(navigator.userAgent)) {
-        is_pc = false;
-    }
-    if (is_pc == true) {
-        $(function(){
-            $(".mbs-movie").mb_YTPlayer();
-        });
-    }
- });
-
 //]]></script>
 </head>
 
