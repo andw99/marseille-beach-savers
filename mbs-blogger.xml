@@ -25,7 +25,7 @@ URL:      www.quoll.eu
 
    <Group description="Page Text" selector="body">
      <Variable name="body.font" description="Font" type="font"
-         default="normal normal 12px 'Montserrat',Trebuchet,sans-serif" value="normal normal 14px 'Montserrat',Trebuchet,sans-serif"/>
+         default="normal normal 12px 'Oxygen',Trebuchet,sans-serif" value="normal normal 14px 'Oxygen',Trebuchet,sans-serif"/>
      <Variable name="body.text.color" description="Text Color" type="color" default="#000000" value="#000098"/>
    </Group>
 
@@ -42,7 +42,7 @@ URL:      www.quoll.eu
 
    <Group description="Blog Title" selector=".header h1">
      <Variable name="header.font" description="Font" type="font"
-         default="normal normal 48px 'Expletus Sans',Trebuchet,sans-serif" value="normal normal 48px 'Expletus Sans',Trebuchet,sans-serif"/>
+         default="normal normal 48px 'Calligraffitti',Trebuchet,sans-serif" value="normal normal 48px 'Calligraffitti',Trebuchet,sans-serif"/>
      <Variable name="header.text.color" description="Text Color" type="color" default="#000000"  value="#000000"/>
    </Group>
 
@@ -53,7 +53,7 @@ URL:      www.quoll.eu
 
    <Group description="Tabs Text" selector=".tabs-inner .widget li a">
      <Variable name="tabs.font" description="Font" type="font"
-         default="normal bold 16px 'Expletus Sans',Trebuchet,sans-serif" value="normal bold 18px 'Expletus Sans',Trebuchet,sans-serif"/>
+         default="normal bold 16px 'Calligraffitti',Trebuchet,sans-serif" value="normal bold 18px 'Calligraffitti',Trebuchet,sans-serif"/>
      <Variable name="tabs.text.color" description="Text Color" type="color" default="#000000" value="#888888"/>
      <Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000" value="#000000"/>
    </Group>
@@ -65,13 +65,13 @@ URL:      www.quoll.eu
 
    <Group description="Date Header" selector=".main-inner h2.date-header">
      <Variable name="date.font" description="Font" type="font"
-         default="normal normal 14px 'Montserrat',Trebuchet,sans-serif" value="normal normal 14px 'Montserrat',Trebuchet,sans-serif"/>
+         default="normal normal 14px 'Oxygen',Trebuchet,sans-serif" value="normal normal 14px 'Oxygen',Trebuchet,sans-serif"/>
      <Variable name="date.text.color" description="Text Color" type="color" default="$(body.text.color)" value="$(body.text.color)"/>
    </Group>
 
    <Group description="Post Title" selector="h3.post-title a">
      <Variable name="post.title.font" description="Font" type="font"
-         default="normal bold 48px 'Expletus Sans',Trebuchet,sans-serif" value="normal bold 48px 'Expletus Sans',Trebuchet,sans-serif"/>
+         default="normal bold 48px 'Calligraffitti',Trebuchet,sans-serif" value="normal bold 48px 'Calligraffitti',Trebuchet,sans-serif"/>
      <Variable name="post.title.text.color" description="Text Color" type="color"
          default="#ffffff" value="#333333"/>
    </Group>
@@ -84,7 +84,7 @@ URL:      www.quoll.eu
 
    <Group description="Gadget Title Color" selector="h2">
      <Variable name="widget.title.font" description="Font" type="font"
-        default="normal bold 14px 'Montserrat',Trebuchet,sans-serif" value="normal bold 14px 'Montserrat',Trebuchet,sans-serif"/>
+        default="normal bold 14px 'Oxygen',Trebuchet,sans-serif" value="normal bold 14px 'Oxygen',Trebuchet,sans-serif"/>
      <Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000" value="#000000"/>
    </Group>
 
@@ -136,8 +136,8 @@ URL:      www.quoll.eu
 /* Content
 ----------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Calligraffitti|Oxygen:400,700);
-/* font-family: 'Montserrat', sans-serif; - text
-font-family: 'Expletus Sans', cursive; - headings */
+/* font-family: 'Oxygen', sans-serif; - text
+font-family: 'Calligraffitti', cursive; - headings */
 body {
   font: $(body.font);
   color: $(body.text.color);
@@ -512,7 +512,7 @@ border: none;
 outline: none;
 width: 100%;
 max-width: 500px;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Oxygen', sans-serif;
 font-size: 18px;
 background: #dddddd;/* CHANGE WIDTH OF FORM ENTRIES */ }
 
@@ -562,13 +562,13 @@ text-align: center;
   background: transparent;
   color: #555555;
   border: none;
-  font: normal bold 16px 'Expletus Sans',Trebuchet,sans-serif;
+  font: normal bold 16px 'Calligraffitti',Trebuchet,sans-serif;
 }
 #searchBox:focus {
   background: transparent;
   color: #AAAAAA;
   outline: none;
-  font: normal normal 16px 'Expletus Sans',Trebuchet,sans-serif;
+  font: normal normal 16px 'Calligraffitti',Trebuchet,sans-serif;
 }
 #searchButton {
   background: #000000;
