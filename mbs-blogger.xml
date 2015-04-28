@@ -923,7 +923,7 @@ a.postThumbnail div {
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
-    text-transform: capitalize;
+    text-transform: uppercase;
     background: rgb(125,126,125);
  /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(125,126,125,0.9) 0%, rgba(226, 226, 226, 0.9) 100%);
