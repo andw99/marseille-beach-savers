@@ -53,7 +53,7 @@ URL:      www.quoll.eu
 
    <Group description="Tabs Text" selector=".tabs-inner .widget li a">
      <Variable name="tabs.font" description="Font" type="font"
-         default="normal bold 16px 'Calligraffitti',Trebuchet,sans-serif" value="normal bold 18px 'Calligraffitti',Trebuchet,sans-serif"/>
+         default="normal bold 20px 'Oxygen',Trebuchet,sans-serif" value="normal bold 20px 'Oxygen',Trebuchet,sans-serif"/>
      <Variable name="tabs.text.color" description="Text Color" type="color" default="#000000" value="#888888"/>
      <Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000" value="#000000"/>
    </Group>
@@ -198,22 +198,21 @@ a:hover {
   background: transparent;
   height: 73px;
   margin-bottom: 13px;
-  float: left;
+  width: 80vw;
   position: relative;
 }
 .header h1 {
   font: $(header.font);
   color: $(header.text.color);
-  margin-left: 20px;
   position: relative;
-  float: left;
+  text-align: center;
 }
 .header h1 a {
   color: $(header.text.color);
   position: relative;
 }
 .char1 {
-  color: red !important;
+  color: blue !important;
   font-weight: 700 !important;
   font-size: 1.2em !important;
 }
@@ -579,10 +578,10 @@ text-align: center;
   background: transparent;
 }
 #searchButton:hover {
-  color:red;
+  color:blue;
 }
 #searchButton:focus {
-  color: lightgreen;
+  color: green;
   outline: none;
 }
 
@@ -594,24 +593,26 @@ margin: auto;
 height: 50px;
 border: none;
 outline: none;
-background: rgba(76,76,76,0.75);
-background: -moz-linear-gradient(top, rgba(76,76,76,0.9) 0%, rgba(89,89,89,0.9) 12%, rgba(102,102,102,0.9) 25%, rgba(71,71,71,0.9) 39%, rgba(44,44,44,0.9) 50%, rgba(0,0,0,0.9) 51%, rgba(17,17,17,0.9) 60%, rgba(43,43,43,0.9) 76%, rgba(28,28,28,0.9) 91%, rgba(19,19,19,0.9) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,0.9)), color-stop(12%, rgba(89,89,89,0.9)), color-stop(25%, rgba(102,102,102,0.9)), color-stop(39%, rgba(71,71,71,0.9)), color-stop(50%, rgba(44,44,44,0.9)), color-stop(51%, rgba(0,0,0,0.9)), color-stop(60%, rgba(17,17,17,0.9)), color-stop(76%, rgba(43,43,43,0.9)), color-stop(91%, rgba(28,28,28,0.9)), color-stop(100%, rgba(19,19,19,0.9)));
-background: -webkit-linear-gradient(top, rgba(76,76,76,0.9) 0%, rgba(89,89,89,0.9) 12%, rgba(102,102,102,0.9) 25%, rgba(71,71,71,0.9) 39%, rgba(44,44,44,0.9) 50%, rgba(0,0,0,0.9) 51%, rgba(17,17,17,0.9) 60%, rgba(43,43,43,0.9) 76%, rgba(28,28,28,0.9) 91%, rgba(19,19,19,0.9) 100%);
-background: -o-linear-gradient(top, rgba(76,76,76,0.9) 0%, rgba(89,89,89,0.9) 12%, rgba(102,102,102,0.9) 25%, rgba(71,71,71,0.9) 39%, rgba(44,44,44,0.9) 50%, rgba(0,0,0,0.9) 51%, rgba(17,17,17,0.9) 60%, rgba(43,43,43,0.9) 76%, rgba(28,28,28,0.9) 91%, rgba(19,19,19,0.9) 100%);
-background: -ms-linear-gradient(top, rgba(76,76,76,0.9) 0%, rgba(89,89,89,0.9) 12%, rgba(102,102,102,0.9) 25%, rgba(71,71,71,0.9) 39%, rgba(44,44,44,0.9) 50%, rgba(0,0,0,0.9) 51%, rgba(17,17,17,0.9) 60%, rgba(43,43,43,0.9) 76%, rgba(28,28,28,0.9) 91%, rgba(19,19,19,0.9) 100%);
-background: linear-gradient(to bottom, rgba(76,76,76,0.9) 0%, rgba(89,89,89,0.9) 12%, rgba(102,102,102,0.9) 25%, rgba(71,71,71,0.9) 39%, rgba(44,44,44,0.9) 50%, rgba(0,0,0,0.9) 51%, rgba(17,17,17,0.9) 60%, rgba(43,43,43,0.9) 76%, rgba(28,28,28,0.9) 91%, rgba(19,19,19,0.9) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
--webkit-box-shadow: 0px 5px 10px -3px rgba(111,0,0,1);
--moz-box-shadow: 0px 5px 10px -3px rgba(111,0,0,1);
-box-shadow: 0px 5px 10px -3px rgba(111,0,0,1);
+
+background: rgba(242,246,248,0.8);
+background: -moz-linear-gradient(top, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,0.8)), color-stop(50%, rgba(216,225,231,0.8)), color-stop(51%, rgba(181,198,208,0.8)), color-stop(100%, rgba(224,239,249,0.8)));
+background: -webkit-linear-gradient(top, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
+background: -o-linear-gradient(top, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
+background: -ms-linear-gradient(top, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
+background: linear-gradient(to bottom, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );
+
+-webkit-box-shadow: 0px 5px 10px -3px rgb(0, 9, 111);
+-moz-box-shadow: 0px 5px 10px -3px rgb(0, 9, 111);
+box-shadow: 0px 5px 10px -3px rgb(0, 9, 111);
 position: fixed;
 top: 0px;
 left: 0px;
 z-index: 999;
 }
 #menuInner {
-padding-left: 10vw;
+padding-left: 2vw;
 }
 .menu {
 padding:0;
@@ -636,28 +637,20 @@ cursor:pointer;
 border: none;
 }
 .menu li a.top_link span::first-letter, .menu li a.top_link span.down::first-letter {
-color: red;
+color: darkblue;
 font-weight: 700;
 }
 .menu li a.top_link span:hover,  .menu li a.top_link span.down:hover {
-color: red;
+color: darkblue;
 font-weight: 700;
-background: -moz-linear-gradient(top, rgba(130,0,0,1) 0%, rgba(143,2,34,0.78) 44%, rgba(109,0,25,0.5) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(130,0,0,1)), color-stop(44%, rgba(143,2,34,0.78)), color-stop(100%, rgba(109,0,25,0.5)));
-background: -webkit-linear-gradient(top, rgba(130,0,0,1) 0%, rgba(143,2,34,0.78) 44%, rgba(109,0,25,0.5) 100%);
-background: -o-linear-gradient(top, rgba(130,0,0,1) 0%, rgba(143,2,34,0.78) 44%, rgba(109,0,25,0.5) 100%);
-background: -ms-linear-gradient(top, rgba(130,0,0,1) 0%, rgba(143,2,34,0.78) 44%, rgba(109,0,25,0.5) 100%);
-background: linear-gradient(to bottom, rgba(130,0,0,1) 0%, rgba(143,2,34,0.78) 44%, rgba(109,0,25,0.5) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#820000', endColorstr='#6d0019', GradientType=0 );
 }
 .menu li a.top_link span:hover::first-letter,  .menu li a.top_link span.down:hover::first-letter {
-color: white;
+color: blue;
 }
 .menu li a.top_link span {
 padding: 0.75em 1.5em;
 color: $(tabs.text.color);
 font: $(tabs.font);
-text-transform: uppercase;
 float: left;
 display: block;
 border: none;
@@ -666,7 +659,6 @@ border: none;
 padding: 0.75em 1.5em;
 color: $(tabs.text.color);
 font: $(tabs.font);
-text-transform: uppercase;
 float: left;
 display: block;
 border: none;
@@ -742,7 +734,7 @@ height:auto;
 ]]></b:skin>
 
 <b:template-skin>
-      <b:variable default='960px' name='content.width' type='string' value='80vw'/>
+      <b:variable default='960px' name='content.width' type='string' value='100vw'/>
       <b:variable default='0' name='main.column.left.width' type='string' value='0'/>
       <b:variable default='310px' name='main.column.right.width' type='string' value='20vw'/>
 
@@ -915,19 +907,19 @@ h2,.post-footer {
 
 a.postThumbnail div {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 12px;
     font-weight: bold;
     text-transform: capitalize;
     background: rgb(125,126,125);
  /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(125,126,125,0.9) 0%, rgba(14,14,14,0.9) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,0.9)), color-stop(100%,rgba(14,14,14,0.9)));
+    background: -moz-linear-gradient(top,  rgba(125,126,125,0.9) 0%, rgba(226, 226, 226, 0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,0.9)), color-stop(100%,rgba(226, 226, 226, 0.9)));
  /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(125,126,125,0.9) 0%,rgba(14,14,14,0.9) 100%);
-    background: -o-linear-gradient(top,  rgba(125,126,125,0.9) 0%,rgba(14,14,14,0.9) 100%);
-    background: -ms-linear-gradient(top,  rgba(125,126,125,0.9) 0%,rgba(14,14,14,0.9) 100%);
-    background: linear-gradient(to bottom,  rgba(125,126,125,0.9) 0%,rgba(14,14,14,0.9) 100%);
+    background: -webkit-linear-gradient(top,  rgba(125,126,125,0.9) 0%,rgba(226, 226, 226, 0.9) 100%);
+    background: -o-linear-gradient(top,  rgba(125,126,125,0.9) 0%,rgba(226, 226, 226, 0.9) 100%);
+    background: -ms-linear-gradient(top,  rgba(125,126,125,0.9) 0%,rgba(226, 226, 226, 0.9) 100%);
+    background: linear-gradient(to bottom,  rgba(125,126,125,0.9) 0%,rgba(226, 226, 226, 0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;
     #7d7e7d&#39;, endColorstr=&#39;#0e0e0e&#39;,GradientType=0 );
     display: none;
@@ -950,11 +942,11 @@ a.postThumbnail:hover div {
 }
 
 .post-body img:hover {
-	-webkit-transform: scale(1.2);  /* Saf3.1+, Chrome */
-    -moz-transform: scale(1.2);  /* FF3.5+ */
-    -ms-transform: scale(1.2);  /* IE9 */
-    -o-transform: scale(1.2);  /* Opera 10.5+ */
-    transform: scale(1.2);
+	-webkit-transform: translateY(-20px);  /* Saf3.1+, Chrome */
+    -moz-transform: translateY(-20px);  /* FF3.5+ */
+    -ms-transform: translateY(-20px);  /* IE9 */
+    -o-transform: translateY(-20px);  /* Opera 10.5+ */
+    transform: translateY(-20px);
 }
 </style>
 </b:if>
@@ -973,7 +965,7 @@ $(document).ready(function() {
     }
     if (is_pc == true) {
         $(function(){
-            $(".km-movie").mb_YTPlayer();
+            $(".mbs-movie").mb_YTPlayer();
         });
     }
  });
@@ -1090,10 +1082,8 @@ head.appendChild(script);
         <b:widget id='Header1' locked='true' title='Marseille Beach Savers (Header)' type='Header'>
           <b:includable id='main'>
             <div class='titlewrapper'>
-            <h1 class='title' id='kmi-home'>Krav Maga Impact</h1>
-  <b:if cond='data:blog.url == &quot;http://www1.kravmagaimpact.fr/p/club.html&quot;'>
-    <a class='km-movie' data-property='{videoURL:&apos;rh9HGAntouM&apos;,opacity:0.5}'/>
-  </b:if>
+            <h1 class='title' id='kmi-home'>Marseille - 13 - Beach Savers</h1>
+    <a class='mbs-movie' data-property='{videoURL:&apos;zJbKbwuXij4&apos;,opacity:0.5}'/>
 
 </div>
 </b:includable>
