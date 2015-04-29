@@ -289,12 +289,14 @@ h3.post-title {
   font: $(post.title.font);
   color: $(post.title.text.color);
   font-size: 28px !important;
+  margin-left: 10vw !important;
 }
 
 h3.post-title a {
   font: $(post.title.font);
   color: $(post.title.text.color);
   font-size: 28px !important;
+  margin-left: 10vw !important;
 }
 
 h3.post-title::first-letter {
@@ -500,7 +502,7 @@ max-width: 100%;
 padding: 10px;
 background: transparent; /* CHANGE BACKGROUND COLOUR OF CONTAINER */
 font-size: 16px;
-color: #AAAAAA; /* CHANGE TEXT COLOUR OF CONTAINER */
+color: #0000aa; /* CHANGE TEXT COLOUR OF CONTAINER */
 border: none;
 outline: none;
 margin: 0 auto; /* REMOVE IF YOU DON'T WANT IT CENTERED */
@@ -513,11 +515,11 @@ width: 100%;
 max-width: 500px;
 font-family: 'Oxygen', sans-serif;
 font-size: 18px;
-background: #dddddd;/* CHANGE WIDTH OF FORM ENTRIES */ }
+background: #ffffff;}
 
 .contact-form-button-submit {
 border: 1px solid #999999; /* CHANGE BORDER OF SEND BUTTON */
-background: #dddddd;  /* CHANGE BACKGROUND COLOR OF SEND BUTTON */
+background: #aaaaaa;  /* CHANGE BACKGROUND COLOR OF SEND BUTTON */
 color: #000000;  /* CHANGE TEXT COLOR OF SEND BUTTON */
 width: 30%;  /* CHANGE WIDTH OF SEND BUTTON */
 margin: 10px 0px;
@@ -525,11 +527,11 @@ margin: 10px 0px;
 
 .contact-form-button-submit:hover{
 border: 1px solid #999999; /* CHANGE BORDER OF HOVER SEND BUTTON */
-background: #666666;  /* CHANGE BACKGROUND COLOR OF HOVER SEND BUTTON */
-color: #FFFFFF;  /* CHANGE TEXT COLOR OF HOVER SEND BUTTON */
+background: #dddddd;  /* CHANGE BACKGROUND COLOR OF HOVER SEND BUTTON */
+color: #0000aa;  /* CHANGE TEXT COLOR OF HOVER SEND BUTTON */
 }
 
-.contact-form-widget #required {color: red; /* CHANGE ASTERISK COLOR */}
+.contact-form-widget #required {color: blue; /* CHANGE ASTERISK COLOR */}
 .contact-form-widget p { margin-bottom: 5px; /* CHANGE SPACE BETWEEN TEXT AND FIELD */}
 .contact-form-cross {margin-left: 5px !important;}
 
