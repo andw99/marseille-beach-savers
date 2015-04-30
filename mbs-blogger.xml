@@ -42,7 +42,7 @@ URL:      www.quoll.eu
 
    <Group description="Blog Title" selector=".header h1">
      <Variable name="header.font" description="Font" type="font"
-         default="normal normal 48px 'Calligraffitti',Trebuchet,sans-serif" value="normal normal 48px 'Calligraffitti',Trebuchet,sans-serif"/>
+         default="normal normal 48px 'Corben',Trebuchet,sans-serif" value="italic normal 48px 'Corben',Trebuchet,sans-serif"/>
      <Variable name="header.text.color" description="Text Color" type="color" default="#000000"  value="#000000"/>
    </Group>
 
@@ -71,7 +71,7 @@ URL:      www.quoll.eu
 
    <Group description="Post Title" selector="h3.post-title a">
      <Variable name="post.title.font" description="Font" type="font"
-         default="normal bold 48px 'Calligraffitti',Trebuchet,sans-serif" value="normal bold 48px 'Calligraffitti',Trebuchet,sans-serif"/>
+         default="normal bold 48px 'Corben',Trebuchet,sans-serif" value="normal bold 48px 'Corben',Trebuchet,sans-serif"/>
      <Variable name="post.title.text.color" description="Text Color" type="color"
          default="#ffffff" value="#333333"/>
    </Group>
@@ -135,9 +135,9 @@ URL:      www.quoll.eu
 
 /* Content
 ----------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Calligraffitti|Oxygen:400,700);
+@import url(http://fonts.googleapis.com/css?family=Corben|Oxygen:400,700);
 /* font-family: 'Oxygen', sans-serif; - text
-font-family: 'Calligraffitti', cursive; - headings */
+font-family: 'Corben', serif; - headings */
 body {
   font: $(body.font);
   color: $(body.text.color);
@@ -236,6 +236,7 @@ h2 {
 }
 
 .main-inner h2.date-header {
+  padding-left: 10vw;
   font: $(date.font);
   color: $(date.text.color);
 }
@@ -318,28 +319,42 @@ h3.post-title a:hover {
 }
 
 .post-body {
+  margin-left: 10vw;
+  width: 60vw;
   line-height: 1.4;
   position: relative;
 }
 
-.post-header {
-  margin: 0 0 1em;
+.post-feeds {
+  padding-left: 10vw;
+  width: 60vw;
+}
 
+.post-header {
+  padding-left: 10vw;
+  width: 60vw;
+  margin: 0 0 1em;
   line-height: 1.6;
 }
 
 .post-footer {
   margin: .5em 0;
   line-height: 1.6;
+  padding-left: 10vw;
+  width: 60vw;
 }
 
 #blog-pager {
   font-size: 140%;
+  padding-left: 20vw;
+  width: 40vw;
 }
 
 #comments {
   background: $(comments.background);
   padding: 15px;
+  margin-left: 15vw;
+  width: 50vw;
 }
 
 #comments .comment-author {
@@ -561,19 +576,19 @@ text-align: center;
   height: 20px;
   width: 10vw;
   background: transparent;
-  color: #eeeeee;
+  color: #dddddd;
   border: none;
   font: normal bold 18px 'Oxygen',Trebuchet,sans-serif;
 }
 #searchBox:focus {
   background: transparent;
-  color: #ffffff;
+  color: #bbbbbb;
   outline: none;
   font: normal normal 16px 'Oxygen',Trebuchet,sans-serif;
 }
 #searchButton {
   background: #000000;
-  color: #AAAAAA;
+  color: #aaaaaa;
   border: none;
   font-family: FontAwesome;
   font-size: 22px;
@@ -596,18 +611,15 @@ height: 50px;
 border: none;
 outline: none;
 
-background: rgba(242,246,248,0.8);
-background: -moz-linear-gradient(top, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,0.8)), color-stop(50%, rgba(216,225,231,0.8)), color-stop(51%, rgba(181,198,208,0.8)), color-stop(100%, rgba(224,239,249,0.8)));
-background: -webkit-linear-gradient(top, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
-background: -o-linear-gradient(top, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
-background: -ms-linear-gradient(top, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
-background: linear-gradient(to bottom, rgba(242,246,248,0.8) 0%, rgba(216,225,231,0.8) 50%, rgba(181,198,208,0.8) 51%, rgba(224,239,249,0.8) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );
+background: rgba(237,237,237,1);
+background: -moz-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,0.52) 53%, rgba(0,0,128,0.1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,0.52)), color-stop(100%, rgba(0,0,128,0.1)));
+background: -webkit-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,0.52) 53%, rgba(0,0,128,0.1) 100%);
+background: -o-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,0.52) 53%, rgba(0,0,128,0.1) 100%);
+background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,0.52) 53%, rgba(0,0,128,0.1) 100%);
+background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(246,246,246,0.52) 53%, rgba(0,0,128,0.1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#000080', GradientType=0 );
 
--webkit-box-shadow: 0px 5px 10px -3px rgb(255, 255, 255);
--moz-box-shadow: 0px 5px 10px -3px rgb(255, 255, 255);
-box-shadow: 0px 5px 10px -3px rgb(255, 255, 255);
 position: fixed;
 top: 0px;
 left: 0px;
@@ -830,7 +842,7 @@ $(document).ready(function() {
     var titleBottomPadding = 8;
     var titleLeftRightPadding = 5;
 
-    var titlePadding = titleTopPadding + 'px ' + titleLeftRightPadding + 'px ' + titleBottomPadding + 'px ' + titleLeftRightPadding + 'px';
+    var titlePadding = titleTopPadding + 'px ' + titleLeftRightPadding + 'px ' + titleBottomPadding + 'px ' + titleLeftRightPadding + 'px !important';
     $('.post-body').each(function(n, wrapper) {
         var wrapper = $(wrapper);
         var image = $(wrapper).find('img').first();
@@ -1084,7 +1096,7 @@ head.appendChild(script);
         <b:widget id='Header1' locked='true' title='Marseille Beach Savers (Header)' type='Header'>
           <b:includable id='main'>
             <div class='titlewrapper'>
-            <h1 class='title' id='kmi-home'>Marseille - 13 - Beach Savers</h1>
+            <h1 class='title' id='kmi-home'>Marseille 13: Beach Savers</h1>
     <a class='mbs-movie' data-property='{videoURL:&apos;zJbKbwuXij4&apos;,opacity:0.5}'/>
 
 </div>
